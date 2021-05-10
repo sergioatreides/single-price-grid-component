@@ -1,0 +1,102 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 47%, 52%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    font-family: 'Karla';
+    background-color: var(--light-gray);
+    margin: 16vh 28vw;
+}
+
+
+main {
+    border-radius: 7px;
+    overflow: hidden;
+    width: 44vw;
+    height: 68vh;
+    display: grid;
+    grid-template-columns: repeat(2, 22vw);
+    grid-template-rows: 30vh 38vh;
+    grid-template-areas: "join join"
+                        "subs why";
+}
+.join,
+.subs,
+.why {
+    padding: 10px 30px;
+}
+.join {
+    grid-area: join;
+    background-color: var(--white);
+}
+.subs {
+    grid-area: subs;
+    background-color: var(--cyan);
+    color: var(--white);
+    padding-top: 20px;
+}
+.why {
+    grid-area: why;
+    background-color: var(--light-cyan);
+    color: var(--white);
+}
+h1 {
+    color: var(--cyan);
+}
+h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.join__paragraph {
+    font-size: 1em;
+    color: var(--grayish-blue);
+}
+.join__guarantee {
+    font-weight: bold;
+    color: hsl(71, 73%, 54%);
+}
+.subs__price {
+    font-size: 2em;
+    font-weight: bold;
+    margin: .5em 0em .2em 0em;
+}
+.subs__per-month {
+    font-size: .6em;
+    padding-left: 8px;
+    font-weight: lighter;
+    color: var(--light-gray);
+    margin: 0em 0em;
+}
+.subs__full-access {
+    margin: 0em 0em;
+    font-size: 1em;
+}
+.boton {
+    width: 100%;
+    background-color: var(--bright-yellow);
+    border: 0px;
+    margin-top: 2em;
+    padding: 1.2em 0px;
+    border-radius: 5px;
+    color: var(--white);
+    font-weight: bold;
+}
+.reasons {
+    line-height: .4em;
+}
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
